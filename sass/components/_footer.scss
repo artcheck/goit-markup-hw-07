@@ -1,7 +1,19 @@
 .footer {
-    background-color: var(--primary-bacground-color);
+    background-color: $primaryBackgroundColor;
 
-    &-cont {
+      &__container{
+        font-family: Roboto;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        text-decoration-line: none;
+        color: rgba(255, 255, 255, 0.6);
+        ustify-content: space-around;
+        display: flex;
+      }
+
+    &-contact {
         font-family: Roboto;
         font-style: normal;
         font-size: 14px;
@@ -17,6 +29,7 @@
         font-style: italic;
         display: flex;
         flex-direction: column;
+        padding: 30px 0px;
       }
 
       &-social__title {
@@ -27,7 +40,7 @@
         line-height: 16px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: var(--primary-white-color);
+        color: $primaryWhiteColor;
         padding-bottom: 20px;
       
       }
@@ -43,7 +56,8 @@
         font-style: normal;
       }
 
-      &-text {
+      &-text,
+      &-address {
         font-family: Roboto;
         font-size: 14px;
         line-height: 1.71;
@@ -53,6 +67,7 @@
         text-decoration-line: none;
         margin-bottom: 20px;
       }
+      
 
       &-social {
         display: flex;
@@ -60,43 +75,48 @@
         padding: 0px 67px;
       }
 
-      &-social_list {
+      &-social__list {
         display: flex;
         padding-bottom: 10px;
       }
 
-      &-link {
+      &-logo__link {
         display: flex;
+        text-decoration-line: none;
       }
 
       &-social__icon {
         background: rgba(255, 255, 255, 0.1);
         border-radius: 20px;
         height: 40px;
+        width: 40px;
         margin-right: 10px;
-      }
-
-      &-social-list__icon {
-        fill: var(--primary-white-color);
-        width: 20px;
-        height: 20px;
         padding: 10px;
       }
 
-      &-contact:hover,
-      &-footer-address:hover,
-      &-footer-contact:focus {
-        color: var(--accent-color);
+      &-social-list__icon {
+        fill: $primaryWhiteColor;
+        width: 20px;
+        height: 20px;
       }
 
-      &-subscription___content{
+      &-contact:hover,
+      &-address:hover,
+      &-contact:focus{
+        color: $accentColor;
+      }
+      &-social__link:hover{
+        background-color: $accentColor;
+      }
+
+      &-subscription__content{
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 30px 15px;
       }
 
-      &r-subscription__title{
+      &-subscription__title{
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
@@ -104,7 +124,7 @@
         line-height: 16px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: var(--primary-white-color);
+        color: $primaryWhiteColor;
         padding-bottom: 20px;
       }
 
@@ -121,18 +141,18 @@
         padding-left: 10px;
         width: 358px;
         margin-right: 12px;
-        background-color: var(--primary-bacground-color);
+        background-color: $primaryBackgroundColor;
         border: 1px solid rgba(255, 255, 255, 0.3);
         box-sizing: border-box;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
-        color: var(--primary-white-color);
+        color: $primaryWhiteColor;
       }
 
       &-subscription__button{
         width: 200px;
-        color: var(--primary-white-color);
-        background: var(--accent-color);
+        color: $primaryWhiteColor;
+        background: $accentColor;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         font-family: Roboto;
@@ -153,15 +173,15 @@
       }
 
       &-subscription__button:hover{
-        background: var(--accent-color);
+        background: $accentColor;
         cursor: pointer;
       }
 
       &-subscription__icon{
         height: 30px;
         width: 50px;
-        fill: var(--primary-white-color);
-        color: var(--primary-white-color);
+        fill: $primaryWhiteColor;
+        color: $primaryWhiteColor;
       }
 
 }

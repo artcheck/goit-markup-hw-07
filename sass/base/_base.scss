@@ -4,7 +4,7 @@
   }
 body {
     margin: 0;
-    color: green;
+    color: $titleTextColor;
     font-family: "railway";
   }
   ul {
@@ -20,13 +20,30 @@ body {
     padding: 94px 0px;
     overflow-x: hidden;
   }
+  .section-title {
+    font-family: Roboto;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-bottom: 78px;
+    color: $titleTextColor;
+  }
   .main-section__title {
     font-family: Roboto;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--title--ext-color);
+    color: $titleTextColor;
+  }
+
+  .logo-blue {
+    color: $accentColor;
+  }
+
+  .logo-black {
+    color: $titleTextColor;
   }
 
   .logo-white {
@@ -36,4 +53,28 @@ body {
     letter-spacing: 0.03em;
     color: #ffffff;
   }
+  
+
+  .logo-blue,
+  .logo-black{
+    font-size: 26px;
+    font-weight: bold;
+    font-family: "raleway";
+    letter-spacing: 0.03em;
+}
+
+  
+  .active-page:after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    display: block;
+    background-color: $accentColor;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10%;
+    position: absolute;
+    bottom: -32px;
+  }
+
   
