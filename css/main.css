@@ -312,6 +312,19 @@ ul {
   color: #212121;
 }
 
+.header-nav-active__page:after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  display: block;
+  background-color: #2196f3;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10%;
+  position: absolute;
+  bottom: -32px;
+}
+
 .logo-blue {
   color: #2196f3;
 }
@@ -366,19 +379,6 @@ ul {
   text-decoration-line: none;
 }
 
-.header-nav__link:hover::after {
-  content: '';
-  width: 100%;
-  height: 4px;
-  display: block;
-  background-color: var(--accent-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 10%;
-  position: absolute;
-  bottom: -32px;
-}
-
 .header-nav__list {
   display: flex;
 }
@@ -394,7 +394,6 @@ ul {
   font-weight: 500;
   color: #212121;
   font-size: 14px;
-  width: 77px;
   display: flex;
   text-decoration-line: none;
 }
@@ -404,13 +403,17 @@ ul {
   letter-spacing: 0.02em;
   font-weight: 500;
   font-size: 14px;
-  width: 77px;
   text-decoration-line: none;
   color: #2196f3;
 }
 
 .header-nav__link:hover, .header-nav__link:focus, .header-nav__link:active, .header-contact__link:hover, .header-contact__link:focus {
   color: #2196f3;
+}
+
+.header-contact__link:hover .header-contact-link__icon,
+.header-contact__link:focus .header-contact-link__icon {
+  fill: #2196f3;
 }
 
 .header-contact__list {
@@ -441,26 +444,13 @@ ul {
 
 .header-contact-link__icon {
   fill: #AFB1B8;
-  width: 18px;
+  width: 25px;
   height: 17px;
   padding-right: 10px;
 }
 
 .header-contact-link__icon:hover {
   fill: #2196f3;
-}
-
-.header-nav-active__page:after {
-  content: '';
-  width: 100%;
-  height: 4px;
-  display: block;
-  background-color: #2196f3;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 10%;
-  position: absolute;
-  bottom: -32px;
 }
 
 .hero-section {
@@ -674,6 +664,16 @@ ul {
   padding: 10px;
 }
 
+.team-social-list__item:hover .team-social__icon {
+  fill: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  width: 20px;
+  height: 20px;
+}
+
 .team-social__link {
   display: flex;
 }
@@ -692,8 +692,8 @@ ul {
 
 .clients-list__logo {
   fill: #AFB1B8;
-  width: 150px;
-  height: 60px;
+  width: 100%;
+  height: 80px;
   border: 2px solid;
   border-radius: 5px;
   border-color: #AFB1B8;
@@ -703,6 +703,7 @@ ul {
 
 .clients-list__logo:hover, .clients-list__logo:focus {
   fill: #2196f3;
+  border-color: #2196f3;
   outline-color: #2196f3;
 }
 
@@ -793,6 +794,15 @@ ul {
 
 .footer-social__icon {
   background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.footer-social__icon:hover {
+  background: #2196f3;
   border-radius: 20px;
   height: 40px;
   width: 40px;
@@ -988,7 +998,7 @@ ul {
 
 .modal-form-input {
   height: 20px;
-  width: 400px;
+  width: 100%;
   border-radius: 2%;
   padding: 20px 0px 20px 40px;
   margin: 5px 0px 10px 0px;
@@ -1016,20 +1026,19 @@ ul {
 .modal-textarea {
   height: 20px;
   width: 440px;
-  /* padding: 10px 16px; */
 }
 
-.modal-form-input:focus {
-  outline: none;
-  outline-color: #2196f3;
-}
-
-.modal-form_textarea:focus {
+.modal-form_textarea:focus, .modal-form-input:focus, .modal-form_textarea:hover, .modal-form-input:hover {
   outline: none;
   border-color: #2196f3;
 }
 
-.modal-form-input:hover .form-icon_contact {
+.modal-form-input:focus + .form-icon_contact,
+.modal-form-input:hover + .form-icon_contact {
+  fill: #2196f3;
+}
+
+.modal-form-input:hover .modal-form-icon_contact {
   color: #2196f3;
   cursor: pointer;
   fill: #2196f3;
@@ -1184,7 +1193,7 @@ ul {
   /* width: 100%; */
   height: 100%;
   background-color: #2196f3;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1208,7 +1217,7 @@ ul {
   padding: 0px 20px 20px 20px;
 }
 
-.portfolio_list:hover .portfolio-list_description {
+.portfolio-list__item:hover .portfolio-list_description {
   transform: translateY(0);
   font-family: Roboto;
   font-style: normal;
@@ -1219,12 +1228,9 @@ ul {
   color: #ffffff;
 }
 
-.portfolio
-.portfolio
-.portfolio
-.portfolio
-.portfolio
-.portfolio
+/* ============================ */
+/* Home work 5 */
+/* Header  active page underline*/
 .nav
 .portfolio-list_style {
   position: relative;
@@ -1238,8 +1244,6 @@ ul {
   transform: translate(50%);
 }
 
-.form
-.modal
 .form-textarea {
   /* padding: 10px; */
   margin: 10px 0px;

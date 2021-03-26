@@ -94,6 +94,15 @@
         padding: 10px;
       }
 
+      &-social__icon:hover {
+        background:$accentColor;
+        border-radius: 20px;
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+        padding: 10px;
+      }
+
       &-social-list__icon {
         fill: $primaryWhiteColor;
         width: 20px;
