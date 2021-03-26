@@ -116,6 +116,19 @@
           }
 
 }
+.header-nav-active__page:after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    display: block;
+    background-color: $accentColor;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10%;
+    position: absolute;
+    bottom: -32px;
+  }
+
 
 
 

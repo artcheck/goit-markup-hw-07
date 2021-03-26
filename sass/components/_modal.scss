@@ -106,7 +106,7 @@
         height: 20px;
         width: 400px;
         border-radius: 2%;
-        padding: 10px 0px 10px 40px;
+        padding: 20px 0px 20px 40px;
         margin: 5px 0px 10px 0px;
         color: $aditionalTextColor;
         border: 1px solid rgba(33, 33, 33, 0.2);
@@ -153,7 +153,15 @@
         fill: $accentColor;
       }
 
-      &-condition_field{
+      
+
+      
+
+      
+    }
+.form{
+  
+  &-condition_field{
         display: flex;
         align-items: center;
         margin: 20px 15px 30px 5px
@@ -169,8 +177,7 @@
         padding-left: 5px;
         color: #2196f3;
       }
-
-}
+    }
 .submit{
       &-form_button{
         display: flex;
