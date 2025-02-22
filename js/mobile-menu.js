@@ -26,3 +26,10 @@
       bodyScrollLock.enableBodyScroll(document.body);
     });
   })();
+
+
+  function myFunction(x) {
+    x.classList.toggle("change");
+  }
+
+ 
