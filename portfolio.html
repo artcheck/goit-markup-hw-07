@@ -26,20 +26,24 @@
           <span class="logo-blue">Web</span
           ><span class="logo-black">Studio</span>
         </a>
-
+         <!--Burger menu-->
+         <div class="mobile-menu menu-toggle js-open-menu" type="button"  onclick="myFunction(this)" aria-expanded="false"> 
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
         <ul class="nav-list">
           <li class="nav-list-item">
             <a class="nav-link" href="./index.html">Studio</a>
           </li>
           <li class="nav-list-item active-page">
-            <a class="nav-link active-link" href="./portfolio.html"
-              >Portfolio</a
-            >
+            <a class="nav-link active-link" href="./portfolio.html">Portfolio</a>
           </li>
           <li class="nav-list-item">
             <a class="nav-link" href="./contacts.html">Contacts</a>
           </li>
         </ul>
+        <!---->
       </nav>
       <ul class="contact-list">
         <li>
@@ -53,22 +57,17 @@
           <a class="cont-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
         </li>
       </ul>
-      <div class="mobile-menu" onclick="openMenuBtn">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
     </header>
     <!--Mobil menu-->
 
     <!----------------------->
     <!--Main content-->
 
-    <main style="height: 1600px">
+    <main>
       <section>
         <ul class="stack-filter">
           <li class="filter">
-            <button class="filter-button, active-filter" type="button">
+            <button class="filter-button active-filter" type="button">
               All
             </button>
           </li>
@@ -247,7 +246,7 @@
     <!--Footer-->
     <footer class="footer">
       <div class="footer-style">
-        <div>
+        <div class="footer-container">
           <a class="logo-link" href="/index.html"
             ><span class="logo-blue">Web</span
             ><span class="logo-white">Studio</span></a
@@ -258,7 +257,7 @@
           </p>
         </div>
         <div class="footer-social">
-          <h4 class="footer-social_title">Social media</h4>
+          <p class="footer-social_title">Social media</p>
           <ul class="footer-social_list">
             <li class="footer-social_icon">
               <a class="social-link" aria-label="instagram" href="#"
@@ -294,10 +293,12 @@
             </li>
           </ul>
         </div>
-
-        <div class="footer-subscription_content">
-          <h2 class="footer-subscription_title">Subscribe</h2>
+      </div>
+       <div class="footer-sub-container">
+        <div>
+          <p class="footer-subscription_title">Subscribe</p>
           <form class="footer-subscription_form" action="#">
+            
             <label class="footer-subscription_label" for="#">
               <input
                 class="footer-subscription_input"
@@ -320,7 +321,9 @@
             </label>
           </form>
         </div>
-      </div>
+        </div>
+      
     </footer>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>
