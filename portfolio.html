@@ -27,36 +27,76 @@
           ><span class="logo-black">Studio</span>
         </a>
          <!--Burger menu-->
-         <div class="mobile-menu menu-toggle js-open-menu" type="button"  onclick="myFunction(this)" aria-expanded="false"> 
+         <div  class="mobile-menu menu-toggle js-open-menu js-close-menu" type="button"  onclick="myFunction(this)" aria-expanded="false" aria-controls="mobile-menu"> 
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
         </div>
-        <ul class="nav-list">
-          <li class="nav-list-item">
-            <a class="nav-link" href="./index.html">Studio</a>
-          </li>
-          <li class="nav-list-item active-page">
-            <a class="nav-link active-link" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-link" href="./contacts.html">Contacts</a>
-          </li>
-        </ul>
-        <!---->
+        
+        <div id="mobile-menu" class="menu-container js-menu-container">
+          <div class="mobile-nav">
+            <ul class="nav-list">
+              <li class="nav-list-item">
+                <a class="nav-link" href="./index.html">Studio</a>
+              </li>
+              <li class="nav-list-item active-page">
+                <a class="nav-link active-link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-link" href="./contacts.html">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-contact">
+            <ul class="contact-list">
+              <li>
+                <address>
+                  <a class="cont-link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </address>
+              </li>
+              <li class="mobile-contact-phone">
+                <a class="cont-phone" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+            </ul>
+            <ul class="mobile-social_list">
+              <li class="social_icon">
+                <a class="social-link" aria-label="instagram" href="#"
+                  ><svg class="footer-social-list-icon">
+                    <use
+                      xlink:href="./images/icons_sprite_original.svg#icon-instagram"
+                    ></use></svg
+                ></a>
+              </li>
+              <li class="social_icon">
+                <a class="social-link" href="#"
+                  ><svg aria-label="twitter" class="footer-social-list-icon">
+                    <use
+                      xlink:href="./images/icons_sprite_original.svg#icon-twitter"
+                    ></use></svg
+                ></a>
+              </li>
+              <li class="social_icon">
+                <a class="social-link" href="#"
+                  ><svg aria-label="facebook" class="footer-social-list-icon">
+                    <use
+                      xlink:href="./images/icons_sprite_original.svg#icon-facebook"
+                    ></use></svg
+                ></a>
+              </li>
+              <li class="social_icon">
+                <a class="social-link" href="#"
+                  ><svg aria-label="linkedin" class="footer-social-list-icon">
+                    <use
+                      xlink:href="./images/icons_sprite_original.svg#icon-linkedin"
+                    ></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+      </div>
       </nav>
-      <ul class="contact-list">
-        <li>
-          <address>
-            <a class="cont-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </address>
-        </li>
-        <li>
-          <a class="cont-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-        </li>
-      </ul>
     </header>
     <!--Mobil menu-->
 
